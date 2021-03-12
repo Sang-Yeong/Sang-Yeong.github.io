@@ -1,0 +1,15 @@
+{% if site.copyright.size > 0 or site.legal.size > 0 or site.hydejack.advertise %}
+<footer class="content" role="contentinfo">
+  <hr/>
+  <!-- {% if site.copyright.size > 0 %}
+    <p><small class="copyright">{{ site.copyright | markdownify | replace:'<p>','' | replace:'</p>','' }}</small></p>
+  {% endif %} -->
+    
+    <span>&copy; {{ site.time | date: '%Y' }} Sangyeong Lee. 
+      Powered by <a href="https://hydejack.com/">Hydejack</a></span>
+
+      <!-- {{ site.owner.name }} -->
+
+  <hr class="sr-only"/>
+</footer>
+{% endif %}
